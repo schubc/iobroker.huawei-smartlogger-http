@@ -1,0 +1,46 @@
+{
+    "expert": "yes",
+    "cli": false,
+    "adapterName": "huawei-smartlogger-http",
+    "title": "huawei-smartlogger-http",
+    "description": "",
+    "keywords": "",
+    "contributors": "",
+    "authorName": "schubc",
+    "authorGithub": "schubc",
+    "authorEmail": "schubc@enteente.com",
+    "features": [
+        "adapter"
+    ],
+    "adminFeatures": [],
+    "type": "energy",
+    "startMode": "daemon",
+    "connectionType": "local",
+    "dataSource": "poll",
+    "connectionIndicator": "yes",
+    "adapterSettings": [
+        {
+            "key": "option1",
+            "defaultValue": true,
+            "inputType": "checkbox"
+        },
+        {
+            "key": "option2",
+            "defaultValue": "42",
+            "inputType": "text"
+        }
+    ],
+    "language": "TypeScript",
+    "nodeVersion": "16",
+    "adminUi": "json",
+    "releaseScript": "yes",
+    "indentation": "Space (4)",
+    "quotes": "double",
+    "es6class": "no",
+    "tools": [],
+    "gitRemoteProtocol": "HTTPS",
+    "license": "MIT License",
+    "dependabot": "yes",
+    "target": "zip",
+    "creatorVersion": "2.3.0"
+}

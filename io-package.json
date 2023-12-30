@@ -1,0 +1,285 @@
+{
+  "common": {
+    "name": "huawei-smartlogger-http",
+    "version": "0.0.1",
+    "news": {
+      "0.0.1": {
+        "en": "initial release",
+        "de": "Erstveröffentlichung",
+        "ru": "Начальная версия",
+        "pt": "lançamento inicial",
+        "nl": "Eerste uitgave",
+        "fr": "Première version",
+        "it": "Versione iniziale",
+        "es": "Versión inicial",
+        "pl": "Pierwsze wydanie",
+        "zh-cn": "首次出版"
+      }
+    },
+    "title": "huawei-smartlogger-http",
+    "titleLang": {
+      "en": "huawei-smartlogger-http",
+      "de": "huawei-smartlogger-http",
+      "ru": "huawei-smartlogger-http",
+      "pt": "huawei-smartlogger-http",
+      "nl": "huawei-smartlogger-http",
+      "fr": "huawei-smartlogger-http",
+      "it": "huawei-smartlogger-http",
+      "es": "huawei-smartlogger-http",
+      "pl": "huawei-smartlogger-http",
+      "zh-cn": "huawei-smartlogger-http"
+    },
+    "desc": {
+      "en": "huawei-smartlogger-http",
+      "de": "huawei-smartlogger-http",
+      "ru": "huawei-smartlogger-http",
+      "pt": "huawei-smartlogger-http",
+      "nl": "huawei-smartlogger-http",
+      "fr": "huawei-smartlogger-http",
+      "it": "huawei-smartlogger-http",
+      "es": "huawei-smartlogger-http",
+      "pl": "huawei-smartlogger-http",
+      "zh-cn": "huawei-smartlogger-http"
+    },
+    "authors": [
+      "schubc <schubc@enteente.com>"
+    ],
+    "keywords": [
+      "ioBroker",
+      "template",
+      "Smart Home",
+      "home automation"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "build/main.js",
+    "icon": "huawei-smartlogger-http.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/schubc/ioBroker.huawei-smartlogger-http/main/admin/huawei-smartlogger-http.png",
+    "readme": "https://github.com/schubc/ioBroker.huawei-smartlogger-http/blob/main/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "energy",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "poll",
+    "adminUI": {
+      "config": "json"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=3.3.22"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=5.1.13"
+      }
+    ],
+    "tier": 3,
+    "supportedMessages": {
+      "custom": true
+    }
+  },
+  "native": {
+    "adress": "0.0.0.0",
+    "username": "operator",
+    "password": "Changeme",
+    "interval": 60,
+    "items": [
+      {
+        "id": 12290,
+        "label": "Energieertrag des aktuellen Tages",
+        "name": "solar_daily",
+        "type": "number",
+        "unit": "kWh",
+        "multiplier": 0
+      },
+      {
+        "id": 12289,
+        "label": "Gesamtenergieausbeute",
+        "name": "solar_total",
+        "type": "number",
+        "unit": "kWh",
+        "multiplier": 0
+      },
+      {
+        "id": 4114,
+        "label": "Eingangsleistung",
+        "name": "solar_input",
+        "type": "number",
+        "unit": "kW",
+        "multiplier": 0
+      },
+      {
+        "id": 4134,
+        "label": "Solarleistung",
+        "name": "solar_active",
+        "type": "number",
+        "unit": "kW",
+        "multiplier": 0
+      },
+      {
+        "id": 4135,
+        "label": "Blindleistung",
+        "name": "solar_blind",
+        "type": "number",
+        "unit": "kVar",
+        "multiplier": 0
+      },
+      {
+        "id": 4115,
+        "label": "PV1 spannung",
+        "name": "solar_pvU1",
+        "type": "number",
+        "unit": "V",
+        "multiplier": 0
+      },
+      {
+        "id": 4116,
+        "label": "Strom PV1",
+        "name": "solar_pvI1",
+        "type": "number",
+        "unit": "A",
+        "multiplier": 0
+      },
+      {
+        "id": 4117,
+        "label": "PV2 spannung",
+        "name": "solar_pvU2",
+        "type": "number",
+        "unit": "V",
+        "multiplier": 0
+      },
+      {
+        "id": 4118,
+        "label": "Strom PV2",
+        "name": "solar_pvI2",
+        "type": "number",
+        "unit": "A",
+        "multiplier": 0
+      },
+      {
+        "id": 4119,
+        "label": "PV3 spannung",
+        "name": "solar_pvU3",
+        "type": "number",
+        "unit": "V",
+        "multiplier": 0
+      },
+      {
+        "id": 4120,
+        "label": "Strom PV3",
+        "name": "solar_pvI3",
+        "type": "number",
+        "unit": "A",
+        "multiplier": 0
+      },
+      {
+        "id": 4121,
+        "label": "PV4 spannung",
+        "name": "solar_pvU4",
+        "type": "number",
+        "unit": "V",
+        "multiplier": 0
+      },
+      {
+        "id": 4128,
+        "label": "Strom PV4",
+        "name": "solar_pvI4",
+        "type": "number",
+        "unit": "A",
+        "multiplier": 0
+      },
+      {
+        "id": 4129,
+        "label": "PV5 spannung",
+        "name": "solar_pvU5",
+        "type": "number",
+        "unit": "V",
+        "multiplier": 0
+      },
+      {
+        "id": 4130,
+        "label": "Strom PV5",
+        "name": "solar_pvI5",
+        "type": "number",
+        "unit": "A",
+        "multiplier": 0
+      },
+      {
+        "id": 4131,
+        "label": "PV6 spannung",
+        "name": "solar_pvU6",
+        "type": "number",
+        "unit": "V",
+        "multiplier": 0
+      },
+      {
+        "id": 4132,
+        "label": "Strom PV6",
+        "name": "solar_pvI6",
+        "type": "number",
+        "unit": "A",
+        "multiplier": 0
+      },
+      {
+        "id": 4138,
+        "label": "PV7 spannung",
+        "name": "solar_pvU7",
+        "type": "number",
+        "unit": "V",
+        "multiplier": 0
+      },
+      {
+        "id": 4140,
+        "label": "Strom PV7",
+        "name": "solar_pvI7",
+        "type": "number",
+        "unit": "A",
+        "multiplier": 0
+      },
+      {
+        "id": 4139,
+        "label": "PV8 spannung",
+        "name": "solar_pvU8",
+        "type": "number",
+        "unit": "V",
+        "multiplier": 0
+      },
+      {
+        "id": 4141,
+        "label": "Strom PV8",
+        "name": "solar_pvI8",
+        "type": "number",
+        "unit": "A",
+        "multiplier": 0
+      }
+
+    ]
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Device or service connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
+}

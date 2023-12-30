@@ -1,0 +1,82 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "adress": {
+            "type": "text",
+            "label": "Smartlogger Adress",
+            "newLine": true
+        },
+        "username": {
+            "type": "select",
+            "label": "Username",
+            "options": [
+                {
+                    "label": "Common User",
+                    "value": "operator"
+                },
+                {
+                    "label": "Advanced User",
+                    "value": "engineer"
+                },
+                {
+                    "label": "Special User",
+                    "value": "admin"
+                }
+            ],
+            "newLine": true
+        },
+        "password": {
+            "type": "text",
+            "label": "Password",
+            "newLine": true
+        },
+        "interval": {
+            "type": "number",
+            "label": "Interval",
+            "newLine": true
+        },
+        "test": {
+            "type": "sendTo",
+            "label": "Send",
+            "newLine": true,
+            "command": "send"
+        },
+        "para1": {
+            "type": "number",
+            "label": "para1",
+            "newLine": true,
+            "default": 4098
+        },
+        "para2": {
+            "type": "number",
+            "label": "para2",
+            "newLine": false,
+            "default": 32774
+        },
+        "items": {
+            "type": "table",
+            "label": "Items",
+            "newLine": true,
+            "export": true,
+            "import": true,
+            "items": [
+                {"type": "number", "width": "10%", "title": {"en": "id"}, "attr": "id", "filter": false, "sort": true, "default": ""},
+                {"type": "text", "width": "40%", "title": {"en": "label"}, "attr": "label", "filter": false, "sort": true, "default": ""},
+                {"type": "text", "width": "20%", "title": {"en": "name"}, "attr": "name", "filter": false, "sort": true, "default": ""},
+                {"type": "select", "width": "10%", "title": {"en": "type"}, "attr": "type", "filter": false, "sort": true, "default": "",             "options": [
+                    {
+                        "label": "Number",
+                        "value": "number"
+                    },
+                    {
+                        "label": "String",
+                        "value": "string"
+                    }
+                ]},
+                {"type": "text", "width": "10%", "title": {"en": "unit"}, "attr": "unit", "filter": false, "sort": true, "default": ""},
+                {"type": "number", "width": "10%", "title": {"en": "multiplier"}, "attr": "multiplier", "filter": false, "sort": false, "default": 0}
+            ]
+        }
+    }
+}
